@@ -272,10 +272,20 @@ img, svg{
     text-decoration: 4px solid underline var(--green);
 }
 
-/* TO DO: Add selectors and styles below for the paragraph and link in the padding box demo section */
+#padding p:last-of-type{
+    padding: 16px 0;
+}
 
-    /* the style below is included for you to add the link in the padding demo section */
-    /* transition: background-color 500ms; */
+#padding a{
+    background-color: var(--green);
+    padding: 16px;
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: fit-content;
+    margin: 16px auto;
+    transition: background-color 500ms;
+}
 
 #padding a:hover{
     background-color: var(--blue);
@@ -303,13 +313,12 @@ img, svg{
 
 /* TO DO: add the styles below one at a time, then save the file and refresh the page in the browser to see the changes */
 #border section p:last-of-type{
-    /* set background color to the dark gray variable */
-    /* set text color to the white variable */
-    /* add 1rem of padding to all sides */
-    /* add a 4px solid yellow border (use the variable for the color) */
-    
-    width: calc(100% - 32px);
-    max-width: calc(65ch - 32px);
+    background-color: var(--dk-gray);
+    color: var(--wht);
+    padding: 1rem;
+    border: 4px solid var(--yellow);
+    width: calc(100% - 40px);
+    max-width: calc(65ch - 40px);
 }
 
 /* MARGIN SECTION STYLES */
@@ -328,7 +337,6 @@ img, svg{
     text-decoration: 4px solid underline var(--red);
 }
 
-/* TO DO: add styles here for spacing elements with margin */
 .spacing{
     background-color: var(--med-gray);
     color: var(--wht);
@@ -336,9 +344,9 @@ img, svg{
     border: 4px solid var(--blk);
     width: calc(100% - 40px);
     max-width: calc(65ch - 40px);
+    margin: 16px auto;
 }
 
-/* TO DO: use margin here for centering */
 .center{
     display: block;
     background-color: var(--dk-gray);
@@ -347,6 +355,7 @@ img, svg{
     height: auto;
     max-width: calc(334px - 40px);
     border: 4px solid var(--green);
+    margin: 16px auto;
 }
 
 /* RESOURCE SECTION STYLES */
